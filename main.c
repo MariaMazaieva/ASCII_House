@@ -21,46 +21,7 @@ int main()
         print_roof(w,h);
         print_house(w);
     }
-
-    // if(w != 0 && h==0){
-    //     if(result_scan_1 && (w < 3 || w > 69))
-    // {
-    //     fprintf(stderr, "Error: Vstup mumo interval!\n");
-    //     return 101;
-    // }
-    // if(!result_scan_1){
-    //     fprintf(stderr, "Error: Chybny vstup!\n");
-    //     return 100;
-    // }
-
-        // }
         // if(w!=0 && h!=0){
-
-            // for(int i = 0; i < (w/2); i++){
-            //     printf(" ");
-            // }
-            // printf("X\n");
-            //
-            // int mid1 = w/2, mid2 = (w/2)+2;
-            //
-            // for(int i = 0; i < (w/2) - 1; i++){
-            //     for(int j = 0; j<w; j++){
-            //
-            //         if(j == mid1-1){
-            //             printf("X");
-            //             mid1--;
-            //         }
-            //         else if(j == mid2-1){
-            //             printf("X");
-            //             mid2++;
-            //             break;
-            //         }
-            //         else{
-            //             printf(" ");
-            //         }
-            //     }
-            //     printf("\n");
-            // }
             // if(w!=h){
             //     for(int i = 0; i < h; i++){
             //         for(int j = 0; j < h; j++){
