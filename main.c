@@ -1,77 +1,24 @@
 #include <stdio.h>
-#include <stdbool.h>
+
 #include <stdlib.h>
 
 int control_input(int *w, int *h, int *ret);
 void print_roof(int w,h);
-void print_house(int w);
+void print_house(int h, int w);
 
 int main()
 {
     int ret = EXIT_SUCCESS;
     int w = 0, h = 0;
-    // int result_scan_1 = scanf("%d %d", &w,&h);
-    printf("w %d,h %d\n",w,h);
-    // int result_scan_2 = 1;
-
+    // printf("w %d,h %d\n",w,h);
 
     control_input(&w,&h, &ret);
 
     if (ret == EXIT_SUCCESS) {
         print_roof(w,h);
-        print_house(w);
+        print_house(h,w);
     }
-        // if(w!=0 && h!=0){
-            // if(w!=h){
-            //     for(int i = 0; i < h; i++){
-            //         for(int j = 0; j < h; j++){
-            //             if(i == h-1){
-            //                 printf("X");
-            //             }
-            //             else if(j == 0 || j == w-1){
-            //                 printf("X");
-            //             }
-            //             else if(i == 0 || i == w-1){
-            //                 printf("X");
-            //             }
-            //             else{
-            //                 printf(" ");
-            //             }
-            //         }
-            //         printf("\n");
-            //     }
-            // }
-            // print_roof(w,h);
-    //         else{
-    //             for(int i = 0; i < h; i++){
-    //                 for(int j = 0; j < w; j++){
-    //                     if(i == h-1){
-    //                         printf("X");
-    //                     }
-    //                     else if(j == 0 || j == w-1){
-    //                         printf("X");
-    //                     }
-    //                     else if(i == 0 || i == w-1){
-    //                         printf("X");
-    //                     }
-    //                     else if(j%2 == 1 && i%2 == 0){
-    //                         printf("*");
-    //                     }
-    //                     else if(j%2 == 0 && i%2 == 0)
-    //                         printf("o");
-    //
-    //                     else if(j%2 == 1 && i%2 == 1)
-    //                         printf("o");
-    //
-    //                     else if(j%2 == 0 && i%2 == 1)
-    //                         printf("*");
-    //
-    //                 }
-    //                 printf("\n");
-    //             }
-    //         }
-    //     }
-    // // }
+
     return ret;
 }
 
@@ -117,36 +64,15 @@ void print_roof(int w, int h) {
             }
             else
                 printf(" ");
-
         }
         printf("\n");
     }
-    // if(w!=h){
-    //     for(int i = 0; i < h; i++){
-    //         for(int j = 0; j < h; j++){
-    //             if(i == h-1){
-    //                 printf("X");
-    //             }
-    //             else if(j == 0 || j == w-1){
-    //                 printf("X");
-    //             }
-    //             else if(i == 0 || i == w-1){
-    //                 printf("X");
-    //             }
-    //             else{
-    //                 printf(" ");
-    //             }
-    //         }
-    //         printf("\n");
-    //     }
-    // }
-
 }
 
-void print_house(int w) {
-    for(int i = 0; i < w; i++) {
+void print_house(int h, int w) {
+    for(int i = 0; i < h; i++) {
         for(int j = 0; j < w; j++){
-            if(i == 0 || i == w-1)
+            if(i == 0 || i == h-1)
                 printf("X");
 
             else if(j == 0 || j == w-1)
